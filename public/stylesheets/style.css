@@ -1,8 +1,30 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font:
+    14px "Lucida Grande",
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: lightgrey;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.time {
+  color: gray;
+  font-size: 0.8em;
 }

@@ -3,10 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button.btn(type="button", onclick="location.href='/new'") Send new message
   each message in messages
     .message
-      p Message: #{message.text}
-      p User: #{message.user}
-      p Added: #{message.added}
-  a(href="/new") Send new message
+      p.user #{message.user}
+      .message-container
+        p.messageCard #{message.text}
+        p.time #{message.added}
+
 
